@@ -2,11 +2,20 @@
 @import "./../../styles/mixins";
 .container {
   max-width: 145rem;
-  padding: 8rem 5rem;
+  padding: 8rem 10rem;
   margin: 0 auto;
   text-align: center;
   background-color: $color-primary;
   color: $color-white;
+  @include respond(large) {
+    padding: 8rem 5rem;
+  }
+  @include respond(medium) {
+    padding: 8rem 4rem;
+  }
+  @include respond(small) {
+    padding: 8rem 2rem;
+  }
 }
 .breakLine {
   text-transform: uppercase;
@@ -22,13 +31,13 @@
   line-height: 5rem;
 }
 .form {
-    padding: 0 3rem;
+  padding: 0 3rem;
   &Ground {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    @include respond (medium) {
-        flex-direction: column;
+    @include respond(medium) {
+      flex-direction: column;
     }
   }
   &Input {
@@ -39,12 +48,13 @@
     color: $color-white;
     width: 35rem;
     outline: 1px solid rgba($color-white, 0.1);
-    @include respond (medium) {
-        width: 100%;
+    transition: outline 0.3s;
+    @include respond(medium) {
+      width: 100%;
     }
     &:hover,
     &:focus {
-      outline: 1px solid rgba($color-white, 0.3);
+      outline: 1px solid rgba($color-white, 0.6);
     }
   }
 }

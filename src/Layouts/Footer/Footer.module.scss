@@ -1,0 +1,75 @@
+@import "./../../styles/variables";
+@import "./../../styles/mixins";
+
+.footer {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  align-items: start;
+  row-gap: 3rem;
+  column-gap: 3rem;
+  color: rgba($color-primary, 0.7);
+  @include respond(large) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}
+.logo {
+  width: 11rem;
+  img {
+    width: 100%;
+  }
+}
+.footerLink {
+  &:link,
+  &:visited {
+    color: rgba($color-primary, 0.7);
+
+    text-decoration: none;
+  }
+  &:hover,
+  &:active {
+    color: $color-link;
+  }
+}
+.footerList {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  align-self: end;
+}
+.footerHeading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: rgba($color-primary, 0.6);
+
+  font-size: 1.2rem;
+}
+.footerContract {
+  align-items: stretch;
+  display: grid;
+  row-gap: 2rem;
+}
+.footerLinkBig {
+  &:link,
+  &:visited {
+    color: rgba($color-primary, 0.7);
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  &:hover,
+  &:active {
+    color: $color-link;
+  }
+}
+.copyright {
+  align-self: end;
+  color: rgba($color-primary, 0.3);
+  &:hover {
+    color: $color-link;
+  }
+}
