@@ -1,0 +1,49 @@
+@import "./../../styles/variables";
+@import "./../../styles/mixins";
+
+.productItem {
+  position: relative;
+  // padding: 0 1.5rem;
+
+  // @include respond(large) {
+  //   padding: 0 4%;
+  // }
+}
+.imgContainer {
+  height: 33rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  display: flex;
+  transition: all 0.3s;
+
+  margin-bottom: 2.5rem;
+}
+.imgContainer:hover .btn {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.8s;
+}
+
+.btn {
+  width: 100%;
+  margin-top: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.description {
+  text-align: center;
+}
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-primary;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+

@@ -1,0 +1,56 @@
+
+@import "./../../styles/variables";
+.imgContainer {
+    height: 54rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+    display: flex;
+    transition: all 0.3s;
+
+    margin-bottom: 2.5rem;
+}
+.imgContainer:hover .btn {
+    opacity: 1;
+    visibility: visible;
+ 
+    transition: all 0.8s;
+    
+}
+.imgContainer:hover {
+    filter: brightness(0.9);
+}
+.btn {
+    width: 100%;
+    margin-top: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+.description {
+    text-align: center;
+}
+.link {
+    &:link, &:visited {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $color-primary ;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        
+    }
+}
+.priceContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.price {
+    font-size: 1.6rem;
+    color: rgba($color-primary, 0.8);
+}
+.priceSale {
+    color: rgba($color-link, 0.8);
+
+}

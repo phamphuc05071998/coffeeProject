@@ -1,0 +1,18 @@
+@import "./../../styles/variables";
+@import "./../../styles/mixins";
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 1.5rem;
+  row-gap: 5rem;
+
+  @include respond(large) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8%;
+  }
+  @include respond(medium) {
+    grid-template-columns: 1fr;
+  }
+}

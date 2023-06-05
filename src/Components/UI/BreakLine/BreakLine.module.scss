@@ -1,0 +1,29 @@
+@import "./../../../styles/variables";
+
+.breakLine {
+  padding-bottom: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  margin: 0 1.5rem;
+  display: grid;
+  grid-template-columns:auto minmax(min-content, max-content) auto ;
+  align-items: center;
+  column-gap: 1.5rem;
+  text-align: center;
+  &::before {
+    width: 3rem;
+    height: 3px;
+    background-color: $color-gray-light-2;
+    display: block;
+    content: "";
+    margin-left: auto;
+  }
+  &::after {
+    width: 3rem;
+    height: 3px;
+    background-color: $color-gray-light-2;
+    display: block;
+    content: "";
+  }
+}

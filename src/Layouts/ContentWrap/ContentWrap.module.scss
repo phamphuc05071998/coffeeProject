@@ -1,0 +1,8 @@
+@import "./../../styles/mixins";
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+  @include respond (medium) {
+    width: 90%;
+  }
+}

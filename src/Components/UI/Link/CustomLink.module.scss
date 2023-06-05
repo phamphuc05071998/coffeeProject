@@ -1,0 +1,19 @@
+@import "./../../../styles/variables";
+
+.link {
+    &:link, &:visited {
+        margin-top: 1rem;
+        color: $color-link;
+        border-bottom: 2px solid rgba($color-link, 0.3);
+        text-decoration: none;
+        padding-bottom: 0.5rem;
+        transition: all 0.3s;
+        
+
+    }
+    &:hover,&:active {
+        border-bottom: 2px solid rgba($color-link, 1);
+
+
+    }
+}

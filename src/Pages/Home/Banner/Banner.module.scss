@@ -1,0 +1,39 @@
+@import "./../../../styles/variables";
+.banner {
+  max-width: 145rem;
+  margin: 0 auto 10rem auto;
+
+  color: $color-white;
+  background-image: url(./../../../assets/img/Header-Pic.jpg);
+  background-size: cover;
+  min-height: 53rem;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-size: 50%;
+  background-repeat: no-repeat;
+}
+.content {
+  max-width: 94rem;
+  text-align: center;
+  &Label {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.8;
+  }
+  &Heading {
+    font-size: 4.8rem;
+    line-height: 1.2em;
+    padding: 1rem 0;
+    font-weight: 500;
+  }
+  &Text {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+  color: $color-white;
+
+    opacity: 0.9;
+  }
+}
