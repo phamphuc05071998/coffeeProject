@@ -34,7 +34,11 @@
 }
 
 .description {
-  text-align: center;
+  @include respond(large) {
+    text-align: center;
+  }
+  display: grid;
+  row-gap: 1.5rem;
 }
 .link {
   &:link,
@@ -45,5 +49,14 @@
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
+  &:hover,
+  &:active {
+    color: $color-link;
+  }
 }
-
+.date {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}

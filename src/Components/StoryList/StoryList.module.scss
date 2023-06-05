@@ -1,0 +1,19 @@
+@import "./../../styles/mixins" ;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    justify-items: center;
+    @include respond (large) {
+        grid-template-columns: repeat(2, 1fr);
+    column-gap: 8%;
+    row-gap: 8%;
+
+    }
+    @include respond (medium) {
+        grid-template-columns: 1fr;
+         row-gap: 5rem;
+
+    }
+}

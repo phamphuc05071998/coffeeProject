@@ -7,7 +7,9 @@ const StorySection = () => {
   return (
     <Wrap>
       <BreakLine>BEHIND THE MUGS, LIFESTYLE STORIES</BreakLine>
-      <StoryList/>
+      <div className="mb-100">
+        <StoryList />
+      </div>
     </Wrap>
   );
 };

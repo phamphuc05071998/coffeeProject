@@ -14,7 +14,7 @@ const DUMMY_DATA = [
   {
     id: "s2",
     title: "How long does a cup of coffee keep you awake?",
-    image: require("./../../assets/img/product/bar-cafe-caffeine-1002740.jpg"),
+    image: require("./../../assets/img/product/Blog-Pic-Head-1.jpg"),
     description: "How long does a cup of coffee keep you awake?",
     date: "OCTOBER 9, 2018",
   },
@@ -22,7 +22,7 @@ const DUMMY_DATA = [
     id: "s3",
     title:
       "Recent research suggests that heavy coffee drinkers may reap health benefits.",
-    image: require("./../../assets/img/product/bar-cafe-caffeine-1002740.jpg"),
+    image: require("./../../assets/img/product/Blog-Pic-Head-8.jpg"),
     description:
       "It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
     date: "OCTOBER 9, 2018",
