@@ -1,0 +1,25 @@
+@import "./../../../styles/variables";
+@import "./../../../styles/mixins";
+
+
+.label {
+  text-transform: uppercase;
+  color: rgba($color-primary, 0.6);
+  letter-spacing: 2px;
+}
+.heading {
+  @include respond(large) {
+    text-align: center;
+    grid-row: 2 / span 1;
+  }
+}
+.headline {
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 4rem;
+}
+.text {
+  margin-bottom: 1.5rem;
+}

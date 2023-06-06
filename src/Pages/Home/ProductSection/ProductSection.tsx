@@ -5,10 +5,10 @@ import BreakLine from "../../../Components/UI/BreakLine/BreakLine";
 import ProductItemLarge from "../../../Components/ProductItemLarge/ProductItemLarge";
 import Wrap from "../../../Layouts/Wrap/Wrap";
 import ProductList from "../../../Components/ProductList/ProductList";
-import Button from "../../../Components/UI/Button/Button";
 import bookImg from "./../../../assets/img/book.jpg";
 import cupImg from "./../../../assets/img/Image-2.jpg";
 import coffeeImg from "./../../../assets/img/coffie_Image.jpg";
+import TextGroup from "../../../Components/UI/TextGroup/TextGroup";
 
 const Product = () => {
   return (
@@ -37,12 +37,12 @@ const Product = () => {
       </div>
       <BreakLine>BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</BreakLine>
       <div className={styles.magazine}>
-        <div className={styles.magazineHeading}>
-          <span className={styles.magazineLabel}>Premium offer</span>
-          <h2 className={styles.magazineHeadline}>Get our Coffee Magazine</h2>
-          <p className={styles.magazineText}>Get our Coffee Magazine</p>
-          <Button>Start shopping</Button>
-        </div>
+        <TextGroup
+          title="Get our Coffee Magazine"
+          description="Get our Coffee Magazine"
+          label="Premium offer"
+          buttonText="Start shopping"
+        />
         <div className={styles.magazineImages}>
           <div className={styles.magazineImageContain}>
             <img className={styles.magazineImage} src={bookImg} alt="book" />

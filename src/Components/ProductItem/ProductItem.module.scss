@@ -8,30 +8,10 @@
   // @include respond(large) {
   //   padding: 0 4%;
   // }
-}
-.imgContainer {
-  height: 38rem;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  padding: 1.5rem;
-  display: flex;
-  transition: all 0.3s;
-
-  margin-bottom: 2.5rem;
-}
-.imgContainer:hover .btn {
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.8s;
+  display: grid;
+  row-gap: 2.5rem;
 }
 
-.btn {
-  width: 100%;
-  margin-top: auto;
-  opacity: 0;
-  visibility: hidden;
-}
 .saleLabel {
   display: inline-block;
   background-color: $color-white;

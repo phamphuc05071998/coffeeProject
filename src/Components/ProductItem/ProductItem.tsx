@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ProductItem.module.scss";
 import { Link } from "react-router-dom";
-// import product from "./../../assets/img/product/unsplash.jpg";
-import ProductButton from "../ProductButton/ProductButton";
 import { motion, Variants } from "framer-motion";
+import CardImage from "../CardImage/CardImage";
 
 interface props {
   title: string;
@@ -20,13 +19,7 @@ const ProductItem: React.FC<props> = ({
   salePrice,
   size,
 }) => {
-  const [isHover, setIsHover] = useState(false);
-  const mouseEnter = () => {
-    setIsHover(true);
-  };
-  const mouseLeave = () => {
-    setIsHover(false);
-  };
+
   const variants: Variants = {
     initial: {
       y: 100,
@@ -48,21 +41,7 @@ const ProductItem: React.FC<props> = ({
       }}
       className={styles.productItem}
     >
-      <Link
-        to="/"
-        onMouseEnter={mouseEnter}
-        onMouseLeave={mouseLeave}
-        className={styles.imgContainer}
-        style={{
-          backgroundImage: `${isHover ?  "linear-gradient(180deg, rgba(29, 31, 46, 0.1), rgba(29, 31, 46, 0.1)),": ""} url(${image})`,
-          height: size === "large" ? "54rem" : "38rem",
-          transition: 'background-image 0.3s ease-in-out',
-        }}
-      >
-        <div className={styles.btn}>
-          <ProductButton>Explore mug</ProductButton>
-        </div>
-      </Link>
+     <CardImage image={image} size={size} buttonText="explore mug"/>
       <span className={styles.saleLabel}>On sale.</span>
       <div className={styles.description}>
         <Link className={styles.link} to="">

@@ -1,0 +1,42 @@
+@import "./../../../styles/mixins";
+
+.slide {
+  margin: 10rem 0;
+  padding: 2rem;
+}
+.slideItem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  align-items: center;
+  //   position: absolute;
+  width: 100%;
+  @include respond(large) {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+}
+.buttonLeft {
+  position: absolute;
+  top: 50%;
+  left: -10rem;
+  transform: translateY(-50%);
+  height: 2rem;
+  opacity: 0.6;
+  z-index: 10;
+  img {
+    height: 100%;
+  }
+}
+.buttonRight {
+  position: absolute;
+  top: 50%;
+  right: -10rem;
+  opacity: 0.6;
+
+  transform: translateY(-50%);
+  height: 2rem;
+  img {
+    height: 100%;
+  }
+}

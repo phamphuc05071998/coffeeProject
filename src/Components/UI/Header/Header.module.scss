@@ -1,0 +1,21 @@
+@import "./../../../styles/variables";
+
+.header {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.headLine {
+    font-size: 3.6rem;
+    line-height: 5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+
+}
+.desc {
+    font-size: 1.8rem;
+    color: rgba($color-primary, 0.7);
+    margin-bottom: 1.5rem;
+}

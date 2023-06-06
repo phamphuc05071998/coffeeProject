@@ -1,0 +1,31 @@
+@import "./../../../styles/variables";
+@import "./../../../styles/mixins";
+
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  @include  respond(medium) {
+    flex-direction: column;
+  }
+ }
+.btn {
+  padding: 1.2rem 2.4rem;
+  border: 1px solid rgba($color-link, 0.1);
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  color: rgba($color-link, 0.6);
+  &:hover {
+  border: 1px solid rgba($color-link, 0.5);
+  color: rgba($color-link, 0.8);
+  }
+  &.active {
+    border: 1px solid rgba($color-link, 0.8);
+    color: rgba($color-link, 0.8);
+  }
+}

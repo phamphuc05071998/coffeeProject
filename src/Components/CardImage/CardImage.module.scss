@@ -1,0 +1,23 @@
+.imgContainer {
+  height: 38rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  display: flex;
+  transition: all 0.3s;
+
+ 
+}
+.imgContainer:hover .btn {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.8s;
+}
+
+.btn {
+  width: 100%;
+  margin-top: auto;
+  opacity: 0;
+  visibility: hidden;
+}
