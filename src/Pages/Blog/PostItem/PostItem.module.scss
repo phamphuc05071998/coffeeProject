@@ -1,15 +1,13 @@
-@import "./../../styles/variables";
-@import "./../../styles/mixins";
+@import "./../../../styles/mixins";
+@import "./../../../styles/variables";
 
-.storyItem {
+.postItem {
   position: relative;
-  // padding: 0 1.5rem;
-
-  // @include respond(large) {
-  //   padding: 0 4%;
-  // }
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 3rem;
+  align-items: start;
 }
-
 
 .description {
   @include respond(large) {

@@ -9,7 +9,7 @@ interface props {
   image: string;
   price: number;
   salePrice?: number;
-  size: "large" | "small";
+  height: "54rem "| "36rem" | "21rem",
 }
 
 const ProductItem: React.FC<props> = ({
@@ -17,7 +17,7 @@ const ProductItem: React.FC<props> = ({
   title,
   price,
   salePrice,
-  size,
+  height
 }) => {
 
   const variants: Variants = {
@@ -41,7 +41,7 @@ const ProductItem: React.FC<props> = ({
       }}
       className={styles.productItem}
     >
-     <CardImage image={image} size={size} buttonText="explore mug"/>
+     <CardImage image={image} height={height} buttonText="explore mug"/>
       <span className={styles.saleLabel}>On sale.</span>
       <div className={styles.description}>
         <Link className={styles.link} to="">

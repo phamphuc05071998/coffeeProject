@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./StoryItem.module.scss";
+import styles from "./PostItem.module.scss";
 import { Link } from "react-router-dom";
 
 import { motion, Variants } from "framer-motion";
-import CardImage from "../CardImage/CardImage";
+import CardImage from "../../../Components/CardImage/CardImage";
 
 interface props {
   title: string;
@@ -12,7 +12,7 @@ interface props {
   date: string;
 }
 
-const StoryItem: React.FC<props> = ({ image, title, description, date }) => {
+const PostItem: React.FC<props> = ({ image, title, description, date }) => {
 
   const variants: Variants = {
     initial: {
@@ -33,9 +33,9 @@ const StoryItem: React.FC<props> = ({ image, title, description, date }) => {
         delay: 0.1,
         duration: 0.5,
       }}
-      className={styles.storyItem}
+      className={styles.postItem}
     >
-      <CardImage buttonText="Read the full story" image={image} height="36rem"/>
+      <CardImage buttonText="Read the full story" image={image} height="21rem"/>
       <div className={styles.description}>
         <Link className={styles.link} to="">
           {title}
@@ -47,4 +47,4 @@ const StoryItem: React.FC<props> = ({ image, title, description, date }) => {
   );
 };
 
-export default StoryItem;
+export default PostItem;

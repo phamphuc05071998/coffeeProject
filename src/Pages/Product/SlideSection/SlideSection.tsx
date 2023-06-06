@@ -26,7 +26,7 @@ const SlideSection = () => {
       <SwiperSlide>
         <div className={styles.slideItem}>
           <CardImage
-            size="small"
+            height="36rem"
             image={image}
             buttonText="Explore our offices"
           />
@@ -41,7 +41,7 @@ const SlideSection = () => {
       <SwiperSlide>
         <div className={styles.slideItem}>
           <CardImage
-            size="small"
+            height="36rem"
             image={image2}
             buttonText="Explore our offices"
           />

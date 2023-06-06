@@ -18,10 +18,12 @@ const Product = () => {
   };
   return (
     <Wrap>
-      <Header
-        title="Our products"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      />
+      <div className={styles.header}>
+        <Header
+          title="Our products"
+          desc="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        />
+      </div>
       <div className={styles.btnGroup}>
         <button
           className={activeButtonHandler(1)}
@@ -54,8 +56,8 @@ const Product = () => {
           Tea mugs
         </button>
       </div>
-      <SlideSection/>
-      <ProductList/>
+      <SlideSection />
+      <ProductList />
     </Wrap>
   );
 };

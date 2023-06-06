@@ -74,7 +74,7 @@ const DUMMY_DATA = [
 
 const ProductList = () => {
   return (
-    <div className={styles.productList}>{DUMMY_DATA.map((product) => <ProductItem title={product.title} image={product.image} salePrice={product.priceSale} price={product.price} size='small'/>)}</div>
+    <div className={styles.productList}>{DUMMY_DATA.map((product) => <ProductItem title={product.title} image={product.image} salePrice={product.priceSale} price={product.price} height='36rem'/>)}</div>
   )
 }
 
