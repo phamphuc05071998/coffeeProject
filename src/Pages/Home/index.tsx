@@ -5,12 +5,13 @@ import Product from "./ProductSection/ProductSection";
 import ParallaxSection from "../../Components/ParallaxSection/ParallaxSection";
 import StorySection from "./StorySection/StorySection";
 import CtaSection from "../../Components/CtaSection/CtaSection";
+const image  = require("./../../assets/img/Section-Image-2.jpg")
 const index = () => {
   return (
     <>
       <Banner />
       <Product />
-      <ParallaxSection/>
+      <ParallaxSection image={image}/>
       <StorySection/>
       <CtaSection/>
     </>

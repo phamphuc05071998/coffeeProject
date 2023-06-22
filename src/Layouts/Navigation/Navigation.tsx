@@ -36,7 +36,7 @@ const Navigation = () => {
               </NavLink>
             </li>
             <li className={styles.navItem}>
-              <NavLink className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink} to="/contract">
+              <NavLink className={({isActive}) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink} to="/contact">
                 Contact
               </NavLink>
             </li>

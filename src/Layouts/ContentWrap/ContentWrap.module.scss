@@ -2,7 +2,9 @@
 .wrap {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
   @include respond (medium) {
     width: 90%;
   }
 }
+

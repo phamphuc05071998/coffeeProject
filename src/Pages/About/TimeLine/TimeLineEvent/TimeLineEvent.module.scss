@@ -1,0 +1,31 @@
+@import "./../../../../styles/variables";
+
+.timeLineEvent {
+    margin-bottom: 5rem;
+}
+.count {
+    font-size: 4rem;
+    opacity: 0.08;
+    letter-spacing: 2px;
+    
+}
+.date {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba($color-primary, 0.6);
+    font-weight: 500;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+
+}
+.heading {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: rgba($color-primary, 0.7);
+}
+.description {
+    font-size: 1.6rem;
+}

@@ -1,0 +1,17 @@
+@import "./../../../../styles/variables";
+.line {
+    margin-top: 3rem;
+}
+.horizontalLine {
+    height: 1px;
+    width: 20rem;
+    margin: 0 auto;
+    background-color:rgba($color-primary, 0.1);
+}
+.verticalLine {
+    width: 1px;
+    height: 6rem;
+    margin: 0 auto;
+    background-color:rgba($color-primary, 0.1);
+
+}

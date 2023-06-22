@@ -1,8 +1,14 @@
 import React from 'react'
 import styles from "./ParallaxSection.module.scss"
-const ParallaxSection = () => {
+
+interface props {
+  image: string
+}
+const ParallaxSection:React.FC<props> = ({image}) => {
   return (
-    <div className={styles.parallax}>
+    <div className={styles.parallax} style={{
+      backgroundImage: `url(${image})`
+    }}>
 
     </div>
   )

@@ -10,8 +10,8 @@ const Root = () => {
       <main>
         <Outlet />
       </main>
-      <ScrollRestoration/>
       <Footer/>
+      <ScrollRestoration/>
     </>
   );
 };

@@ -7,11 +7,11 @@ const Heading = () => {
     <div className={styles.hero}>
       <div className={styles.heading}>
         <Header
-          title="Read coffee stories on our Blog"
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+          title="Let's Connect"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis."
         />
       </div>
-      <BreakLine>featured posts</BreakLine>
+      <BreakLine>our offices</BreakLine>
     </div>
   );
 };

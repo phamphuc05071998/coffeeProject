@@ -1,0 +1,90 @@
+@import "./../../../styles/mixins";
+.content {
+    margin-bottom: 10rem;
+}
+.background {
+  height: 32rem;
+  margin-bottom: 10rem;
+  margin-top: -10rem;
+  background-image: url("./../../../assets/img/About-Cover.jpg");
+  background-size: cover;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 13rem;
+  margin-top: 10rem;
+  margin-bottom: 13rem;
+  @include respond(large) {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    row-gap: 5rem;
+  }
+}
+.imageContainer {
+  height: 38rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &:nth-of-type(2) {
+    @include respond(large) {
+      grid-row: 1 / span 1;
+    }
+  }
+  &:nth-of-type(4) {
+    @include respond(large) {
+      grid-row: 3 / span 1;
+    }
+  }
+}
+.gridItem {
+  display: grid;
+  row-gap: 3rem;
+}
+.heading {
+  font-size: 2.4rem;
+}
+.team {
+  &Pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    @include respond(large) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 8%;
+    }
+    @include respond(medium) {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+    }
+  }
+  &Picture {
+    height: 38rem;
+    @include respond(medium) {
+       width: 30rem;
+       margin: 0 auto;
+      }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &Container {
+    text-align: center;
+  }
+}
+
+.name {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+.position {
+  text-transform: uppercase;
+}
